@@ -24,23 +24,6 @@ function App() {
   const getStyleName = (path: string) => path.split("/").at(-1)!.split(".")[0];
 
   /* =========================
-     Init styles after fetch
-  ========================= */
-
-  // useEffect(() => {
-  //   if (Object.keys(images).length === 0) return;
-
-  //   const initialStyles: SelectedStyles = {};
-
-  //   Object.keys(images).forEach((appearance) => {
-  //     initialStyles[appearance] =
-  //       getStyleName(images[appearance][0]);
-  //   });
-
-  //   setSelectedStyles(initialStyles);
-  // }, [images]);
-
-  /* =========================
      Derived Data
   ========================= */
 
